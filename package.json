@@ -1,0 +1,8 @@
+{
+  "name": "game-of-life",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/game-core.test.js"
+  }
+}
