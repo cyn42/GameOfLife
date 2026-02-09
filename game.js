@@ -251,5 +251,6 @@
     });
 
     resizeCanvas();
+    randomizeGrid();
     draw();
 })();

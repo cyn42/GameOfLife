@@ -67,8 +67,58 @@ body {
     text-align: right;
 }
 
+#main {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 8px;
+}
+
 canvas {
     display: block;
-    margin-top: 8px;
     cursor: crosshair;
+}
+
+#legend {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 14px 16px;
+    min-width: 130px;
+}
+
+#legend h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ccc;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 6px;
+}
+
+.swatch {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.swatch.dead {
+    background: #111;
+    border: 1px solid #444;
+}
+
+.legend-divider {
+    border-top: 1px solid #333;
+    margin: 8px 0;
 }
