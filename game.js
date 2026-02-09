@@ -79,7 +79,7 @@ function scheduleStep() {
     step();
     draw();
     scheduleStep();
-  }, parseInt(speedSlider.value, 10));
+  }, 550 - parseInt(speedSlider.value, 10));
 }
 
 function start() {
