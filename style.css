@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#controls button {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+#controls button:hover {
+    background: #3a3a3a;
+    border-color: #666;
+}
+
+#controls button:active {
+    background: #444;
+}
+
+#speedLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+#speedSlider {
+    width: 120px;
+    accent-color: #00cccc;
+}
+
+#genCounter {
+    font-size: 14px;
+    color: #aaa;
+    min-width: 140px;
+    text-align: right;
+}
+
+canvas {
+    display: block;
+    margin-top: 8px;
+    cursor: crosshair;
+}
